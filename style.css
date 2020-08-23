@@ -294,3 +294,36 @@ right: 50px;
 .social-media a:hover .fa-youtube {
     color: #F00;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+
+    body {
+        background-image: url(images/background1.jpg);
+        background-position: center;
+        background-attachment: scroll;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        width: 30%;
+    }
+
+    .container {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(16, 1fr);
+    
+    }
+
+    /* .nav-wrapper {
+        
+    } */
+    
+    .content-wrapper {
+        grid-column: 1 / span 13 !important;
+        grid-row: 5 / 36;
+    }
+    footer {
+        grid-row: 36 / span 4 !important;
+        grid-column: 1 / 13 !important;
+    }
+}
